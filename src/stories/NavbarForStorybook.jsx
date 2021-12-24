@@ -42,4 +42,4 @@ NavbarForStorybook.propTypes = {
     
 };
 
-export default NavbarForStorybook
+export default NavbarForStorybook;
