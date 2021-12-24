@@ -23,5 +23,5 @@ const Template = (args) => (
     thirdTab : "Notes",
     fourthTab :"Take Action" ,
 
-  };
+  }
  
