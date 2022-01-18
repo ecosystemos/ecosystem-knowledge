@@ -1,10 +1,14 @@
 import './App.css';
 import Navbar from '../src/components/Navbar'
+import Footer from './components/Footer';
+import SyllabusPage from './components/SyllabusPage';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Navbar></Navbar>
+      <SyllabusPage></SyllabusPage>
+      <Footer />
     </div>
   );
 }
