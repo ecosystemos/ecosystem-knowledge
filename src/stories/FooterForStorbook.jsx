@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Flex, Spacer,SimpleGrid,ButtonGroup,IconButton,Text,Link } from '@chakra-ui/react'
 import {FaLinkedin, FaTwitter, FaFacebook} from 'react-icons/fa'
-import logoImage from '../stories/assets/sclogo.png'
+import logoImage from '../stories/assets/scLogo.png'
 import { Image } from '@chakra-ui/image';
 import styled from "styled-components";
 import { Icon } from '@iconify/react';
