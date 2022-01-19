@@ -6,7 +6,7 @@ import {SliderForStorybook} from './SliderForStorybook';
 //import { addDecorator } from "@storybook/react";
 
 export default {
-     title: "Components/Review Card Slider",
+     title: "Components",
      component: SliderForStorybook,
      subcomponents: { ReviewCardForStorybook },
     };
@@ -20,7 +20,7 @@ const Template = (args) => (
     description: 'This course provides a great overview of Blender, an extermely powerful (and also incredibly complicated) 3D modeling and animation program. Mikey, the main instructor, is amusing and informative. Both he and Ben student work',
     lname: 'Maurica',
     fname: 'Alejandro',
-    title: 'Ecosystem Builder, Barcelona',
+    title: 'Ecosystem Builder, Barcelon',
     intervalMS: 6100,
     showArrows:true,
   };
