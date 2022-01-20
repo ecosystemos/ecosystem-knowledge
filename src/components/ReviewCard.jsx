@@ -1,11 +1,13 @@
 import React from 'react'
-import { Box, Text,  Center } from "@chakra-ui/react"
+import { Box, Text, Center } from "@chakra-ui/react"
 import { Image } from "@chakra-ui/react"
 //import { useQuery, gql } from "@apollo/client";
 import styled from "styled-components";
 
 import UserImg from '../stories/assets/user.jpg';
 //import { boxShadow } from 'styled-system';
+
+import PropTypes from 'prop-types';
 
 /* const ReviewCards = gql`
 query ReviewCard {
@@ -69,7 +71,7 @@ const TextBoxStyle = {
 
 
 
-const SliderContainer = {
+const SliderForStorybookContainer = {
   borderWidth: "1px",
   borderRadius: "8px",
   width: "768px",
@@ -138,7 +140,7 @@ const TitleStyle = {
 };
 
 
-export const ReviewCard = ({ description, fname, title, lname, ...props}) => {
+export const ReviewCard = ({ description, fname, title, lname, avatarSrc,...props}) => {
 /*   const { data, loading, error } = useQuery(ReviewCards);
   if (loading) {
     return (<h1 loading />);
@@ -163,6 +165,13 @@ export const ReviewCard = ({ description, fname, title, lname, ...props}) => {
 };
 
 export default ReviewCard;
+
+ReviewCard.propTypes = {
+    description: PropTypes.string.isRequired,
+    fname: PropTypes.string.isRequired,
+    lname: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+};
 
 /* ReviewCard.defaultProps = {
     description: "Default des",

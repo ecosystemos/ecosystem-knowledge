@@ -1,5 +1,5 @@
 import React from 'react';
-import {FooterForStorybook as Footer} from './FooterForStorbook';
+import  Footer from '../components/Footer';
 
 
 

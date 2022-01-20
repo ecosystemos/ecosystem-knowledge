@@ -5,9 +5,10 @@ import logoImage from '../stories/assets/scLogo.png'
 import { Image } from '@chakra-ui/image';
 import styled from "styled-components";
 import { Icon } from '@iconify/react';
-import ButtonLabel from './ButtonLabel';
+// import ButtonLabel from './ButtonLabel';
 
-
+import PropTypes from 'prop-types';
+import  ButtonLabel from './ButtonLabel';
 
 
 
@@ -88,18 +89,18 @@ const TwitterIconWrapper = styled.section `
 
 
 
-const Footer = () => {
+export const Footer = ({color,buttonText,buttonWidth,buttonHeight,buttonColor}) => {
     return (
       <React.Fragment>
 
 
-<Box bg='#004766' w='100%' h='386' p={4} >
+<Box bg={color} w='100%' h='386' p={4} >
 <SimpleGrid columns={1} spacing={10}>
-<Box bg='#004766' height='110px'>
+<Box bg={color} height='110px'>
   <Flex>
     <Spacer />
 
-    <Box w='350px' h='300px' bg='#004766'> 
+    <Box w='350px' h='300px' bg={color}> 
     <Image  style={{ width: "150px", height: "50px"}}    
     src={logoImage}   >
       </Image> 
@@ -110,7 +111,7 @@ const Footer = () => {
     <Spacer />
 
 
-    <Box w='350px' h='300px' bg='#004766'> 
+    <Box w='350px' h='300px' bg={color}> 
     <FooterContentWtrapper>
     <Text style={{marginBottom :"10px" , fontWeight:"bold"}}>About US </Text>
     <Link style={{marginBottom :"10px"}}>About Startup Commons</Link>
@@ -132,7 +133,7 @@ const Footer = () => {
     <Spacer />
 
    
-    <Box w='350px' h='300px' bg='#004766'> 
+    <Box w='350px' h='300px' bg={color}> 
  
 <FooterContentWtrapper>
 <Text style={{marginBottom :"10px" , fontWeight:"bold"}}>About You</Text>
@@ -166,7 +167,7 @@ const Footer = () => {
 
     <Spacer />
 
-    <Box w='350px' h='300px' bg='#004766'> 
+    <Box w='350px' h='300px' bg={color}> 
     
     <FooterContentWtrapper>
 
@@ -174,7 +175,7 @@ const Footer = () => {
 <Text style={{ fontSize: "14px"}}>info@startupcommons.com</Text>
 <Text style={{marginBottom :"10px" , fontSize: "14px"}}>1-800-456-2020</Text>
 <Text style={{ marginBottom :"10px" , fontWeight: "500"}}>Stay connected with the lastest trends in ecosystem building</Text>
-<ButtonLabel></ButtonLabel>
+<ButtonLabel buttonText={buttonText} buttonColor={buttonColor} buttonHeight={buttonHeight} buttonWidth={buttonWidth}></ButtonLabel>
 
 
     </FooterContentWtrapper>
@@ -189,12 +190,12 @@ const Footer = () => {
   <Spacer />  
   <Spacer />  
   <Spacer />  
-  <Box bg='#004766' height='60px'>
+  <Box bg={color} height='60px'>
   <Flex>
   <Spacer />
 
 
-    <Box w='735px' h='50px' bg='#004766'>  
+    <Box w='735px' h='50px' bg={color}>  
     <CopyrightWrapper>
     <Text style={{ marginRight :"15px"}}>Copyright © 2019 Unirever, Inc.</Text>
     <Link style={{ marginRight :"15px"}}>Site Map</Link>
@@ -209,7 +210,7 @@ const Footer = () => {
 
     <Spacer />
    
-    <Box w='735px' h='50px' bg='#004766' >
+    <Box w='735px' h='50px' bg={color} >
 
          <ButtonGroup  style={{marginLeft:"360px"}}variant="ghost" color="white" >
         <SocialMediaIconsWrapper>
@@ -243,4 +244,11 @@ const Footer = () => {
 
 }
 
+Footer.propTypes = {
+    color: PropTypes.string.isRequired,
+    buttonText: PropTypes.string.isRequired,
+   
+    
+    
+};
 export default Footer

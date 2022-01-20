@@ -4,7 +4,7 @@
  */
  import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
  import { Carousel } from 'react-responsive-carousel';
- import {ReviewCardForStorybook} from './ReviewCardForStorybook';
+ import ReviewCard from './ReviewCard';
  import styled from "styled-components";
  
  
@@ -25,7 +25,7 @@
  }
  `;
  
- export const SliderForStorybook = ({ intervalMS,showArrows, description, fname, title, lname, avatarSrc,...props}) =>{
+ export const Slider = ({ intervalMS,showArrows, description, fname, title, lname, avatarSrc,...props}) =>{
      return(
          <CaroStyle>
          <Carousel
@@ -36,13 +36,14 @@
        autoPlay={true}
        interval={6100}//6100
      >
-        <ReviewCardForStorybook   description = {description} fname={fname} lname={lname} title={title} />
-        <ReviewCardForStorybook   description = {description} fname={fname} lname={lname} title={title} />
-        <ReviewCardForStorybook   description = {description} fname={fname} lname={lname} title={title} />
-        <ReviewCardForStorybook   description = {description} fname={fname} lname={lname} title={title} />
+        <ReviewCard   description = {description} fname={fname} lname={lname} title={title} />
+        <ReviewCard   description = {description} fname={fname} lname={lname} title={title} />
+        <ReviewCard   description = {description} fname={fname} lname={lname} title={title} />
+        <ReviewCard   description = {description} fname={fname} lname={lname} title={title} />
       
     </Carousel>
     </CaroStyle>
      )
  };
  
+ export default Slider;

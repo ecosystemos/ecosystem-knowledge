@@ -1,10 +1,12 @@
-import React, { Component } from 'react'
-import { Flex, TabList, Tabs, Tab, TabPanels, TabPanel } from '@chakra-ui/react'
+import React from 'react'
+import { Flex, TabList, Tabs, Tab} from '@chakra-ui/react'
+import PropTypes from 'prop-types';
 
-export class Toolbar extends Component {
-    render() {
-        return (
-            <Flex color='white' >
+
+
+export const Navbar = ({navbarColor,firstTab,secondTab,thirdTab,fourthTab,...args}) => {
+    return (
+        <Flex color='white' >
                 {/* <Box bg='#0E5E81' style={{width: "100vw", height: "72px", display: 'flex', justifyContent: 'space-evenly'}} >
                     <Box  as='button'>
                     Syllabus
@@ -19,17 +21,25 @@ export class Toolbar extends Component {
                     Take Action
                     </Box>
                 </Box> */}
-                <Tabs variant='enclosed' bg='#0E5E81' style={{width: "100vw", height: "72px", display: 'flex', justifyContent: 'center'}}>
+                <Tabs variant='enclosed' bg={navbarColor} style={{width: "100vw", height: "72px", display: 'flex', justifyContent: 'center'}}>
                 <TabList borderBottom='none'>
-                    <Tab _selected={{ color: 'black', bg: 'white'}} style={{padding: '0 50px 0 50px', ml: '20px', marginTop: "20px"}}>Syllabus</Tab>
-                    <Tab _selected={{ color: 'black', bg: 'white'}} style={{padding: '0 50px 0 50px', ml: '20px', marginTop: "20px"}}>Q&nbsp;&#38;&nbsp;A</Tab>
-                    <Tab _selected={{ color: 'black', bg: 'white'}} style={{padding: '0 50px 0 50px', ml: '20px', marginTop: "20px"}}>Notes</Tab>
-                    <Tab _selected={{ color: 'black', bg: 'white'}} style={{padding: '0 50px 0 50px', ml: '20px', marginTop: "20px"}}>Take Action</Tab>
+                    <Tab _selected={{ color: 'black', bg: 'white'}} style={{padding: '0 50px 0 50px', ml: '20px', marginTop: "20px"}}>{firstTab}</Tab>
+                    <Tab _selected={{ color: 'black', bg: 'white'}} style={{padding: '0 50px 0 50px', ml: '20px', marginTop: "20px"}}>{secondTab}</Tab>
+                    <Tab _selected={{ color: 'black', bg: 'white'}} style={{padding: '0 50px 0 50px', ml: '20px', marginTop: "20px"}}>{thirdTab}</Tab>
+                    <Tab _selected={{ color: 'black', bg: 'white'}} style={{padding: '0 50px 0 50px', ml: '20px', marginTop: "20px"}}>{fourthTab}</Tab>
                 </TabList>
                 </Tabs>
           </Flex>
-        )
-    }
+    )
 }
 
-export default Toolbar
+Navbar.propTypes = {
+    navbarColor: PropTypes.string.isRequired,
+    firstTab: PropTypes.string.isRequired,
+    secondTab : PropTypes.string.isRequired,
+    thirdTab : PropTypes.string.isRequired,
+    fourthTab : PropTypes.string.isRequired,
+    
+};
+
+export default Navbar;

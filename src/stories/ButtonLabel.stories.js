@@ -1,5 +1,5 @@
 import React from 'react';
-import {ButtonLabelForStorybook as ButtonLabel} from './ButtonLabelForStorybook';
+import ButtonLabel from '../components/ButtonLabel';
 
 
 
