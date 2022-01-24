@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavbarForStorybook as Navbar} from './NavbarForStorybook';
+import Navbar from '../components/Navbar';
 
 
 export default {
