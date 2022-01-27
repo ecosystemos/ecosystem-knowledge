@@ -15,8 +15,8 @@ const Template = (args) => (
   <Navbar {...args}></Navbar>
     
 );
-  export const navbar = Template.bind({});
-  navbar.args = {
+  export const navbarProperties = Template.bind({});
+  navbarProperties.args = {
     navbarColor: "#0E5E81",
     firstTab: "Syllabus",
     secondTab : "Q & A",

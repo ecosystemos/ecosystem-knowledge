@@ -25,7 +25,7 @@
  }
  `;
  
- export const ReviewCardSlider = ({ intervalMS,showArrows, description, fname, title, lname, avatarSrc,...props}) =>{
+ export const Slider = ({ intervalMS,showArrows, description, fname, title, lname, avatarSrc,...props}) =>{
      return(
          <CaroStyle>
          <Carousel
@@ -46,4 +46,4 @@
      )
  };
  
- export default ReviewCardSlider;
+ export default Slider;
