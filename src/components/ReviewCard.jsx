@@ -71,15 +71,15 @@ const TextBoxStyle = {
 
 
 
-const SliderForStorybookContainer = {
-  borderWidth: "1px",
-  borderRadius: "8px",
-  width: "768px",
-  height: "507px",
-  paddingTop: "4.6%",
-  zIndex: "-1",
-  backgroundColor: "rgb(212 223 227 / 27%)",
-};
+// const SliderForStorybookContainer = {
+//   borderWidth: "1px",
+//   borderRadius: "8px",
+//   width: "768px",
+//   height: "507px",
+//   paddingTop: "4.6%",
+//   zIndex: "-1",
+//   backgroundColor: "rgb(212 223 227 / 27%)",
+// };
 
 
 
@@ -92,8 +92,6 @@ const ImageStyle = {
   width: "128px",
   height: "128px",
   position: "absolute",
-  width: "128px",
-  height: "128px",
   marginTop: "-56px",
 };
 
