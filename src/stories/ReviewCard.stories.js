@@ -1,19 +1,20 @@
 import React from 'react';
 import ReviewCard from '../components/ReviewCard';
-import Slider from '../components/Slider';
+import ReviewCardSlider from '../components/ReviewCardSlider';
+
 //import { storiesOf } from '@storybook/react';
 //import ApolloWraper from '../src/components/ReviewCard/ApolloProvider';
 //import { addDecorator } from "@storybook/react";
 
 export default {
      title: "Components",
-     component: Slider,
+     component: ReviewCard,
      subcomponents: { ReviewCard },
     };
 const Template = (args) => (
-    <Slider {...args}>
+    <ReviewCardSlider {...args}>
       
-    </Slider>
+    </ReviewCardSlider>
 );
   export const reviewCard = Template.bind({});
   reviewCard.args = {

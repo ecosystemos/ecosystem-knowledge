@@ -17,8 +17,8 @@ export default {
   ); 
 
 
-  export const footerProperties = Template.bind({});
-  footerProperties.args = {
+  export const footer = Template.bind({});
+  footer.args = {
     color: "#004766",
     buttonText:"Sign me up!",
     buttonText:"Sign me up!",
