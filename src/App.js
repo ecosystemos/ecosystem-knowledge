@@ -24,7 +24,7 @@ function App() {
       <SyllabusPage></SyllabusPage>
     
                
-      <Newsletter> </Newsletter>  
+    
 
 
     
