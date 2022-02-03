@@ -47,16 +47,16 @@ margin-bottom: 4%;
 
 `;
 
-const SelectOptionWrapper = styled.section `
+// const SelectOptionWrapper = styled.section `
 
-width:100%;
-
-
+// width:100%;
 
 
 
 
-`;
+
+
+// `;
 
 
 

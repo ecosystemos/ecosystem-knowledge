@@ -2,6 +2,7 @@ import Navbar from '../src/components/Navbar'
 import CourseCard from './components/CourseCard';
 import CourseCardSlider from './components/CourseCardSlider';
 import Footer from './components/Footer';
+import Newsletter from './components/Newsletter';
 import ReviewCardSlider from './components/ReviewCardSlider';
 import SyllabusPage from './components/SyllabusPage';
 
@@ -22,6 +23,11 @@ function App() {
 
       <SyllabusPage></SyllabusPage>
     
+               
+    
+
+
+    
 
       <Footer 
       color={"#004766"}
@@ -32,6 +38,8 @@ function App() {
       buttonHeight={"40px"}          
       />  
           
+
+ 
     </div>
   );
 }

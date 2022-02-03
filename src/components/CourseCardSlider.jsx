@@ -6,7 +6,6 @@
  import { Carousel } from 'react-responsive-carousel';
  import CourseCard from './CourseCard';
  import styled from "styled-components";
- import { Box } from "@chakra-ui/react";
  
  
  const CaroStyle = styled.div `

@@ -1,6 +1,7 @@
 import React from 'react';
 import SyllabusLessons from './SyllabusLessons';
 import CourseCardSlider from './CourseCardSlider';
+import Newsletter from './Newsletter';
 
 
 
@@ -23,6 +24,17 @@ const SyllabusPage = () => {
         showArrows={true}
  
         ></CourseCardSlider>
+
+
+        <Newsletter 
+
+          header={"Sign up for Startup Commons newsletter"}
+          text="We’ll keep you up to date on all things Startup Ecosystems!"
+          buttonText={"Sign me up"}
+          buttonAndFormColor={"#004766;"}
+          placeholderText={'Enter Your Email'}
+        
+        ></Newsletter>
 
         </React.Fragment>
   )
