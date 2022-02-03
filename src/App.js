@@ -1,5 +1,9 @@
 import Navbar from '../src/components/Navbar'
+import CourseCard from './components/CourseCard';
+import CourseCardSlider from './components/CourseCardSlider';
 import Footer from './components/Footer';
+import Newsletter from './components/Newsletter';
+import ReviewCardSlider from './components/ReviewCardSlider';
 import SyllabusPage from './components/SyllabusPage';
 
 
@@ -19,15 +23,23 @@ function App() {
 
       <SyllabusPage></SyllabusPage>
     
+               
+      <Newsletter> </Newsletter>  
+
+
+    
 
       <Footer 
       color={"#004766"}
+      buttonText={"Sign me up!"}
       buttonText={"Sign me up!"}
       buttonColor={"#0E5E81"}
       buttonWidth={"135px"}
       buttonHeight={"40px"}          
       />  
           
+
+ 
     </div>
   );
 }
