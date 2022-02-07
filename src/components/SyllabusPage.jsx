@@ -2,6 +2,7 @@ import React from 'react';
 import SyllabusLessons from './SyllabusLessons';
 import CourseCardSlider from './CourseCardSlider';
 import Newsletter from './Newsletter';
+import Consulting from './Consulting';
 
 
 
@@ -24,6 +25,8 @@ const SyllabusPage = () => {
         showArrows={true}
  
         ></CourseCardSlider>
+
+        <Consulting></Consulting>
 
 
         <Newsletter 
