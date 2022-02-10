@@ -26,7 +26,13 @@ const SyllabusPage = () => {
  
         ></CourseCardSlider>
 
-        <Consulting></Consulting>
+        <Consulting 
+        header={"Consulting that meets your needs"}
+        description= {"Not sure which consulting package is right for you? We’ll help you choose"
+        }
+        ></Consulting>
+
+        
 
 
         <Newsletter 
