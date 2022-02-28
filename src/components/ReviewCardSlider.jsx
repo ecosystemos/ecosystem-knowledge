@@ -11,6 +11,7 @@
  const CaroStyle = styled.div `
  .carousel .control-dots .dot
  {
+    background-color:'#F7FBFD';
      background: #82C6E3;
      box-shadow: 0px 4px 8px rgba(76, 166, 205, 0.2);
      width:16px;
