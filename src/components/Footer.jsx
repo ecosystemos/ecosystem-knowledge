@@ -30,6 +30,7 @@ text-align: left;
 
 
 
+
 `;
 
 
@@ -89,12 +90,12 @@ const TwitterIconWrapper = styled.section `
 
 
 
-export const Footer = ({color,buttonText,buttonWidth,buttonHeight,buttonColor}) => {
+export const Footer = ({color,buttonText,buttonWidth,buttonHeight,buttonColor, height}) => {
     return (
       <React.Fragment>
 
 
-<Box bg={color} w='100%' h='386' p={4} >
+<Box bg={color} w='100%' h='386' p={4}>
 <SimpleGrid columns={1} spacing={10}>
 <Box bg={color} height='110px'>
   <Flex>
