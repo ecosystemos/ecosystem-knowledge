@@ -2,7 +2,9 @@ import React from 'react';
 import SyllabusLessons from './SyllabusLessons';
 import CourseCardSlider from './CourseCardSlider';
 import Newsletter from './Newsletter';
-
+import Consulting from './Consulting';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 
 const SyllabusPage = () => {
@@ -10,6 +12,14 @@ const SyllabusPage = () => {
 
         <React.Fragment>
        
+       <Navbar
+                              navbarColor={"#0E5E81"}
+                              firstTab={"Syllabus"}
+                              secondTab= {"Q & A"}
+                              thirdTab= {"Notes"}
+                              fourthTab={"Take Action"}
+                            />
+
         <SyllabusLessons 
         header= {"Syllabus"}
         learningObjectives= {"Building your Startup Ecosystem"}
@@ -25,6 +35,14 @@ const SyllabusPage = () => {
  
         ></CourseCardSlider>
 
+        <Consulting 
+        header={"Consulting that meets your needs"}
+        description= {"Not sure which consulting package is right for you? We’ll help you choose"
+        }
+        ></Consulting>
+
+        
+
 
         <Newsletter 
 
@@ -35,6 +53,17 @@ const SyllabusPage = () => {
           placeholderText={'Enter Your Email'}
         
         ></Newsletter>
+
+
+        
+<Footer 
+                              color={"#004766"}
+                              buttonText={"Sign me up!"}
+                              buttonColor={"#0E5E81"}
+                              buttonWidth={"41%"}
+                              buttonHeight={"40px"}          
+                            /> 
+
 
         </React.Fragment>
   )

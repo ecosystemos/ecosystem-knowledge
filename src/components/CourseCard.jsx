@@ -47,7 +47,7 @@ display: block;
 const ImageWrapper = styled.section `
 
 margin: 32px;
-width: 328px;
+width: 45%;
 height: 328px;
 left: 0px;
 top: 0px;
@@ -63,7 +63,7 @@ flex-direction: column;
 
 margin: 38px 40px 38px 40px;
 
-width: 1200px;
+width: 165%;
 height: 252px;
 left: 250px;
 top: 38px;
@@ -125,7 +125,7 @@ const CourseCard = ({header,description}) => {
 
            <ImageWrapper>
                 <Box>
-                <Image boxSize='200px' src={pinkRiver} alt='Pink River' />
+                <Image boxSize='200%' src={pinkRiver} alt='Pink River' />
                 </Box>
                 </ImageWrapper>
 

@@ -30,6 +30,7 @@ text-align: left;
 
 
 
+
 `;
 
 
@@ -89,29 +90,29 @@ const TwitterIconWrapper = styled.section `
 
 
 
-export const Footer = ({color,buttonText,buttonWidth,buttonHeight,buttonColor}) => {
+export const Footer = ({color,buttonText,buttonWidth,buttonHeight,buttonColor, height}) => {
     return (
       <React.Fragment>
 
 
-<Box bg={color} w='100%' h='386' p={4} >
+<Box bg={color} w='100%' h='386' p={4}>
 <SimpleGrid columns={1} spacing={10}>
 <Box bg={color} height='110px'>
   <Flex>
     <Spacer />
 
-    <Box w='350px' h='300px' bg={color}> 
-    <Image  style={{ width: "150px", height: "50px"}}    
+    <Box w='21%' h='300px' bg={color}> 
+    <Image  style={{ width: "50%", height: "50px"}}    
     src={logoImage}   >
       </Image> 
       <Text 
-      style={{color:"white",width: "290px", height: "50px" , fontSize: "14px",marginTop:"7px", textAlign: "left"}}>
+      style={{color:"white",width: "90%", height: "50px" , fontSize: "14px",marginTop:"7px", textAlign: "left"}}>
          Scaling entrepreneurship and innovation around the world by connecting innovators, local businesses and governments.
          </Text></Box>
     <Spacer />
 
 
-    <Box w='350px' h='300px' bg={color}> 
+    <Box w='21%' h='300px' bg={color}> 
     <FooterContentWtrapper>
     <Text style={{marginBottom :"10px" , fontWeight:"bold"}}>About US </Text>
     <Link style={{marginBottom :"10px"}}>About Startup Commons</Link>
@@ -133,7 +134,7 @@ export const Footer = ({color,buttonText,buttonWidth,buttonHeight,buttonColor}) 
     <Spacer />
 
    
-    <Box w='350px' h='300px' bg={color}> 
+    <Box w='21%' h='300px' bg={color}> 
  
 <FooterContentWtrapper>
 <Text style={{marginBottom :"10px" , fontWeight:"bold"}}>About You</Text>
@@ -167,7 +168,7 @@ export const Footer = ({color,buttonText,buttonWidth,buttonHeight,buttonColor}) 
 
     <Spacer />
 
-    <Box w='350px' h='300px' bg={color}> 
+    <Box w='21%' h='300px' bg={color}> 
     
     <FooterContentWtrapper>
 
@@ -195,7 +196,7 @@ export const Footer = ({color,buttonText,buttonWidth,buttonHeight,buttonColor}) 
   <Spacer />
 
 
-    <Box w='735px' h='50px' bg={color}>  
+    <Box w='50%' h='50px' bg={"red"}>  
     <CopyrightWrapper>
     <Text style={{ marginRight :"15px"}}>Copyright © 2019 Unirever, Inc.</Text>
     <Link style={{ marginRight :"15px"}}>Site Map</Link>
@@ -206,11 +207,9 @@ export const Footer = ({color,buttonText,buttonWidth,buttonHeight,buttonColor}) 
     
     
     </Box>
-   
 
-    <Spacer />
    
-    <Box w='735px' h='50px' bg={color} >
+    <Box w='45%' h='50px' bg={"yellow"} >
 
          <ButtonGroup  style={{marginLeft:"360px"}}variant="ghost" color="white" >
         <SocialMediaIconsWrapper>

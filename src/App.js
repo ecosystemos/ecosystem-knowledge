@@ -1,48 +1,42 @@
-import Navbar from '../src/components/Navbar'
-import CourseCard from './components/CourseCard';
-import CourseCardSlider from './components/CourseCardSlider';
-import Footer from './components/Footer';
-import Newsletter from './components/Newsletter';
-import ReviewCardSlider from './components/ReviewCardSlider';
+import React from 'react';
 import SyllabusPage from './components/SyllabusPage';
+import { BrowserRouter as Router, Route , Routes} from 'react-router-dom';
+import LandingPage from './components/LandingPage'
+import Navbar from '../src/components/Navbar'
+import Footer from './components/Footer';
 
 
 function App() {
   return (
-    <div className="App">
-     
-      <Navbar 
-      navbarColor={"#0E5E81"}
-      firstTab={"Syllabus"}
-      secondTab= {"Q & A"}
-      thirdTab= {"Notes"}
-      fourthTab={"Take Action"}
-      />
-
-    
-
-      <SyllabusPage></SyllabusPage>
-    
-               
-    
+  
+      <div className="App">
+          <Router>
+      <Routes>
+                       
+                        
+                          <Route path='/syllabus' element={<SyllabusPage/>} >  </Route>
+                      
+                    
 
 
-    
+                          </Routes>
+      <Routes>
 
-      <Footer 
-      color={"#004766"}
-      buttonText={"Sign me up!"}
-      buttonText={"Sign me up!"}
-      buttonColor={"#0E5E81"}
-      buttonWidth={"135px"}
-      buttonHeight={"40px"}          
-      />  
-          
+             <Route path='/' element={<LandingPage/>} ></Route>
 
- 
-    </div>
+      </Routes>
+
+
+      </Router>
+      </div>
+
+
+
+
   );
 }
+
+
 
 export default App;
  

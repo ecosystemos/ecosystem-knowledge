@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Text, Center } from "@chakra-ui/react"
+import { Box, Grid, Text, Center } from "@chakra-ui/react"
 import { Image } from "@chakra-ui/react"
 //import { useQuery, gql } from "@apollo/client";
 import styled from "styled-components";
@@ -61,6 +61,8 @@ const TextBoxStyle = {
   margin: "75px",
   padding: "25px 50px",
   textAlign: "-webkit-center",
+  height:'384px',
+  width:'764px',
   borderWidth: "1px",
   borderRadius: "8px",
   overflow: "hidden",
@@ -147,18 +149,21 @@ export const ReviewCard = ({ description, fname, title, lname, avatarSrc,...prop
     return (<h1 error />);
   } */
   return (
-      <Box style={TextBoxStyle}>
-        <Center >
-          <Image src={UserImg} style={ImageStyle}></Image>
-        </Center>
-        <BlockQuotes>
-          <Text style={DescriptionStyle}>{description}</Text>
-        </BlockQuotes>
-        <Box style={FooterTextBox}>
-          <Text style={NameStyle}>{fname} {lname}</Text>
-          <Text style={TitleStyle}>{title}</Text>
-        </Box>
-      </Box>
+    <Grid display='flex' justifyContent='center' bg='#F7FBFD'>
+      <Box  style={TextBoxStyle}>
+              <Center >
+                <Image src={UserImg} style={ImageStyle}></Image>
+              </Center>
+              <BlockQuotes>
+                <Text style={DescriptionStyle}>{description}</Text>
+              </BlockQuotes>
+              <Box style={FooterTextBox}>
+                <Text style={NameStyle}>{fname} {lname}</Text>
+                <Text style={TitleStyle}>{title}</Text>
+              </Box>
+            </Box>
+    </Grid>
+      
   )
 };
 

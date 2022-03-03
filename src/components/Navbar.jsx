@@ -1,6 +1,7 @@
 import React from 'react'
 import { Flex, TabList, Tabs, Tab} from '@chakra-ui/react'
 import PropTypes from 'prop-types';
+import { Link } from "react-router-dom";
 
 
 
@@ -23,8 +24,8 @@ export const Navbar = ({navbarColor,firstTab,secondTab,thirdTab,fourthTab,...arg
                 </Box> */}
                 <Tabs variant='enclosed' bg={navbarColor} style={{width: "100vw", height: "72px", display: 'flex', justifyContent: 'center'}}>
                 <TabList borderBottom='none'>
-                    <Tab _selected={{ color: 'black', bg: 'white'}} style={{padding: '0 50px 0 50px', ml: '20px', marginTop: "20px"}}>{firstTab}</Tab>
-                    <Tab _selected={{ color: 'black', bg: 'white'}} style={{padding: '0 50px 0 50px', ml: '20px', marginTop: "20px"}}>{secondTab}</Tab>
+                    <Tab _selected={{ color: 'black', bg: 'white'}} style={{padding: '0 50px 0 50px', ml: '20px', marginTop: "20px"}}><Link to="/syllabus">{firstTab}</Link></Tab>
+                    <Tab _selected={{ color: 'black', bg: 'white'}} style={{padding: '0 50px 0 50px', ml: '20px', marginTop: "20px"}}><Link to="/questionandanswers">{secondTab}</Link></Tab>
                     <Tab _selected={{ color: 'black', bg: 'white'}} style={{padding: '0 50px 0 50px', ml: '20px', marginTop: "20px"}}>{thirdTab}</Tab>
                     <Tab _selected={{ color: 'black', bg: 'white'}} style={{padding: '0 50px 0 50px', ml: '20px', marginTop: "20px"}}>{fourthTab}</Tab>
                 </TabList>
