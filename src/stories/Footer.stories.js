@@ -23,7 +23,7 @@ export default {
     buttonText:"Sign me up!",
     buttonText:"Sign me up!",
     buttonColor: "#0E5E81",
-    buttonWidth: "135px",
+    buttonWidth: "41%",
     buttonHeight: "40px",
     
 
