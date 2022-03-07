@@ -13,7 +13,7 @@ import StarRating from '../components/StarRating';
 
 
 function Card(props) {
-  const { product, summary, longLine } = props;
+  const { product, summary, longLine, ecosystemdeveloper } = props;
 
   return (
     <Box 
@@ -63,6 +63,9 @@ function Card(props) {
         <Text fontSize='16px' position='absolute' top='60px' color="gray.500">
           {longLine}
         </Text>
+        <Button  color='#FFFFFF' _hover={{  background: "static",    color: "white", }} fontFamily='body' bgColor='#3D4D51'>
+            <Link>Ecosystem Developer</Link>
+        </Button> 
       </Stack>
         <Button  width="131px"  alignSelf='flex-end' height='38px' color='#FFFFFF' _hover={{  background: "static",    color: "white", }} fontFamily='body' bgColor='#3D4D51'>
             <Link>Go to course</Link>
