@@ -196,7 +196,7 @@ export const Footer = ({color,buttonText,buttonWidth,buttonHeight,buttonColor, h
   <Spacer />
 
 
-    <Box w='50%' h='50px' bg={"red"}>  
+    <Box w='50%' h='50px' bg={color}>  
     <CopyrightWrapper>
     <Text style={{ marginRight :"15px"}}>Copyright © 2019 Unirever, Inc.</Text>
     <Link style={{ marginRight :"15px"}}>Site Map</Link>
@@ -209,7 +209,7 @@ export const Footer = ({color,buttonText,buttonWidth,buttonHeight,buttonColor, h
     </Box>
 
    
-    <Box w='45%' h='50px' bg={"yellow"} >
+    <Box w='45%' h='50px' bg={color} >
 
          <ButtonGroup  style={{marginLeft:"360px"}}variant="ghost" color="white" >
         <SocialMediaIconsWrapper>

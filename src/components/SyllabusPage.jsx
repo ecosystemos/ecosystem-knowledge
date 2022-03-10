@@ -20,6 +20,7 @@ const SyllabusPage = () => {
                               fourthTab={"Take Action"}
                             />
 
+
         <SyllabusLessons 
         header= {"Syllabus"}
         learningObjectives= {"Building your Startup Ecosystem"}
