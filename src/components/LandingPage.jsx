@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, Button, Box, Link, Spacer } from '@chakra-ui/react';
+import { Text, Button, Box, Link, Spacer ,Flex} from '@chakra-ui/react';
 import { Image } from '@chakra-ui/image';
 import Rectangle34 from '../stories/assets/Rectangle34.png';
 import Rectangle35 from '../stories/assets/Rectangle35.png'
@@ -23,18 +23,47 @@ import ReviewCardSlider from './ReviewCardSlider';
 export class LandingPage extends Component {
   render() {
     return (
-      <>
-        <Box bg="#FFFFFF"  style={{ height: "116px",width:"100%" ,display: 'flex', alignItems: 'center', paddingLeft:"19%" }} >
-            <Button fontFamily='body'  _hover={{ bgColor: 'FFFFFF' }} color="black" bg='#FFFFFF' border='none' >About</Button>
+      <React.Fragment>
+
+        <Box bg="#FFFFFF"  style={{ height: "80px" }} >
+
+
+          <Box marginTop={"30px"}> 
+          <Flex flexDirection={'row'} > 
+
+         <Box w="100%"> </Box>
+          <Box w="240%" > 
+
+          <Button fontFamily='body'  _hover={{ bgColor: 'FFFFFF' }} color="black" bg='#FFFFFF' border='none' >About</Button>
             <Button fontFamily='body'  _hover={{ bgColor: 'FFFFFF' }} color="black" bg='#FFFFFF' border='none'>Learn</Button>
             <Button fontFamily='body'  _hover={{ bgColor: 'FFFFFF' }} color="black" bg='#FFFFFF' border='none' >Connect</Button>
             <Button fontFamily='body'  _hover={{ bgColor: 'FFFFFF' }} color="black" bg='#FFFFFF' border='none' >Scale</Button>
             <Button fontFamily='body'  _hover={{ bgColor: 'FFFFFF' }} color="black" bg='#FFFFFF' border='none'>Contact</Button>
-            <Button fontFamily='body'  _hover={{ bgColor: 'FFFFFF' }} color="black" bg='#FFFFFF' border='none' left='650px'>Log In</Button>
-            <Button fontFamily='body' color="white" bg='#3D4D51' border='none' left='650px'>Sign Up Free</Button>
-        </Box>
-      <Grid bg='#F7FBFD' height='100vh'>
-          <GridItem w='50%'>
+
+          </Box>
+
+          <Box  w="60%" > 
+
+          <Button fontFamily='body'  _hover={{ bgColor: 'FFFFFF' }} color="black" bg='#FFFFFF' border='none'>Log In</Button>
+            <Button fontFamily='body' color="white" bg='#3D4D51' border='none' >Sign Up Free</Button>
+            
+            
+          </Box>
+          </Flex>
+          
+          </Box>
+            
+            </Box>
+           
+
+
+
+
+
+        <Box> 
+      <Grid  bg='#F7FBFD' height='100vh'>
+        <Flex flexDirection="row">
+          <GridItem w='100%'>
             <Text fontSize='5xl' fontFamily='body' w='400' display='flex' marginTop='134px' justifyContent='space-around'>
               Level up your <br/>Ecosystem Building
             </Text>
@@ -44,22 +73,32 @@ export class LandingPage extends Component {
             <Link fontSize='md' display='flex' justifyContent='center' marginTop='15px' color='#222C2F' alignItems='center' marginRight='132px' >
               Sign up for our free classes below &#160; &#160;<Icon color='#222C2F' width='15.56px' height='16px' icon="ant-design:arrow-down-outlined"  position='absolute'/>
             </Link>
-          </GridItem>
-          <GridItem w='50%'>
-              <Image 
-                style={{ width: "384px", height: "256px", top: '182px', left: '1104px', position: 'absolute', bg:'#FFFFF'}}
+        </GridItem>
+        <GridItem marginTop={"90px"} marginRight="0px" w="44%" h="575px"> 
+          
+        <Box  style={{ width: "384px", height: "256px",  marginLeft: '-30px', bg:'#FFFFF'}} >
+        <Image 
+               
                 src={Rectangle34}
               />
+     </Box>
+          <Box   style={{ width: "192px", height: "256px", marginLeft:"220px", marginTop: '-140px', bg:'#FFFFF' }}> 
               <Image 
-                style={{ width: "192px", height: "256px", top: '318px', left: '1350px', position:'absolute', bg:'#FFFFF' }}
+              
                 src={Rectangle35}
               />
+          </Box>
+          <Box  style={{ width: "479px", height: "479px", opacity: '1.5', marginTop: '-280px', left: '1104px',  bg:'#FFFFF' }}> 
               <Image 
-                style={{ width: "479px", height: "479px", opacity: '0.5', top: '270px', left: '1104px', position:'absolute', bg:'#FFFFF' }}
+               
                 src={Polygon1}
               />
+  </Box>
+ 
           </GridItem>
+          </Flex>
       </Grid>
+      </Box>
       <Grid bg='#F7FBFD' justifyContent='center'>
         <GridItem position='sticky' marginTop='-375px'>
           <Card  product={'Building your Startup Ecosystem'} summary={<StarRating  icon="clarity:star-line"/>} longLine={'Learn how to build a thriving startup ecosystem. Understand how all the moving parts are related and develop skills to be able to connect...'}/>
@@ -79,15 +118,16 @@ export class LandingPage extends Component {
             showArrows={true}
           /> 
       </Box>
-        {/* <Box >
+        <Box >
           <Image width='100%' src={Picture}></Image>
-          <Image width='100vw' src={Vector1}></Image> 
+          {/* <Image width='100vw' src={Vector1}></Image> 
           <Image width='100vw' marginTop='-400px' src={Vector2}></Image>  
           <Image width='100vw' marginTop='-400px' src={Vector3}></Image>
-          <Image width='100vw' src={Vector4}></Image>
+          <Image width='100vw' src={Vector4}></Image> */}
           <Image src={Ellipse7} background='#F7FBFD' ></Image>
-        </Box> */}
+        </Box>
       </Box>
+     
         <Footer 
             color={"#004766"}
             buttonText={"Sign me up!"}
@@ -95,7 +135,7 @@ export class LandingPage extends Component {
             buttonWidth={"135px"}
             buttonHeight={"40px"}          
           /> 
-      </>
+      </React.Fragment>
     );
   }
 }
