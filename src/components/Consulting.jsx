@@ -138,7 +138,6 @@ const Consulting = ({header, description}) => {
         <Flex flexDirection={'row'}> 
             <ConsultingCard> </ConsultingCard>  
             <ConsultingCard> </ConsultingCard>
-            <ConsultingCard> </ConsultingCard>  
 
         </Flex>
 

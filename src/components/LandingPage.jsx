@@ -24,7 +24,7 @@ export class LandingPage extends Component {
   render() {
     return (
       <>
-        <Box bg="#FFFFFF"  style={{ height: "116px", display: 'flex', alignItems: 'center', marginLeft:'25%'}} >
+        <Box bg="#FFFFFF"  style={{ height: "116px",width:"100%" ,display: 'flex', alignItems: 'center', paddingLeft:"19%" }} >
             <Button fontFamily='body'  _hover={{ bgColor: 'FFFFFF' }} color="black" bg='#FFFFFF' border='none' >About</Button>
             <Button fontFamily='body'  _hover={{ bgColor: 'FFFFFF' }} color="black" bg='#FFFFFF' border='none'>Learn</Button>
             <Button fontFamily='body'  _hover={{ bgColor: 'FFFFFF' }} color="black" bg='#FFFFFF' border='none' >Connect</Button>
@@ -55,7 +55,7 @@ export class LandingPage extends Component {
                 src={Rectangle35}
               />
               <Image 
-                style={{ width: "630px", height: "630px", opacity: '0.5', top: '270px', left: '1104px', position:'absolute', bg:'#FFFFF' }}
+                style={{ width: "479px", height: "479px", opacity: '0.5', top: '270px', left: '1104px', position:'absolute', bg:'#FFFFF' }}
                 src={Polygon1}
               />
           </GridItem>
@@ -79,14 +79,14 @@ export class LandingPage extends Component {
             showArrows={true}
           /> 
       </Box>
-        <Box >
+        {/* <Box >
           <Image width='100%' src={Picture}></Image>
-          {/* <Image width='100vw' src={Vector1}></Image> 
+          <Image width='100vw' src={Vector1}></Image> 
           <Image width='100vw' marginTop='-400px' src={Vector2}></Image>  
           <Image width='100vw' marginTop='-400px' src={Vector3}></Image>
-          <Image width='100vw' src={Vector4}></Image> */}
+          <Image width='100vw' src={Vector4}></Image>
           <Image src={Ellipse7} background='#F7FBFD' ></Image>
-        </Box>
+        </Box> */}
       </Box>
         <Footer 
             color={"#004766"}
