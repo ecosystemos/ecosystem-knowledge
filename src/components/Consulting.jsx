@@ -46,7 +46,7 @@ const DescriptionWrapper = styled.section `
 
 
 margin-top: 24px;
-margin-left: 2%
+margin-left: 2%;
 
 width: 649px;
 height: 30px;
@@ -138,7 +138,6 @@ const Consulting = ({header, description}) => {
         <Flex flexDirection={'row'}> 
             <ConsultingCard> </ConsultingCard>  
             <ConsultingCard> </ConsultingCard>
-            <ConsultingCard> </ConsultingCard>  
 
         </Flex>
 
