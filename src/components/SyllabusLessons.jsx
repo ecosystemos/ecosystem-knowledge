@@ -4,16 +4,18 @@ import styled from 'styled-components'
 import { Icon } from '@iconify/react';
 import SelectOptionResources from './SelectOptionResources';
 import PropTypes from 'prop-types';
+import Progress from './Progress';
+
 
 
 
 const SyllabusWrapper = styled.section `
 
 display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-  margin-top: 5%;
+  margin-left: 26%;
+
+  width: 55%;
+  margin-top: 0;
   margin-bottom: 5%;
 
 `;
@@ -59,6 +61,12 @@ margin-bottom: 4%;
 // `;
 
 
+const SyllabusContextMarginTopWrapper = styled.section `
+
+margin-top:64px;
+`;
+
+
 
 const SyllabusLessons = ( {header, learningObjectives, description,headerColor}) => {
 
@@ -72,8 +80,14 @@ const SyllabusLessons = ( {header, learningObjectives, description,headerColor})
    console.log(moduleStatus)
     return (
         <React.Fragment>
-     
-        <SyllabusWrapper>
+ 
+
+<SyllabusWrapper>
+
+<Flex direction={'row'}> 
+
+      <Box w="100%" >
+      <SyllabusContextMarginTopWrapper>
             <Text fontSize='32px'  color={headerColor}  style={{textAlign:"left", marginBottom:"16px"}}>{header}</Text>
             <Text fontSize='20px'  color="#222C2F"  style={{textAlign:"left", marginBottom:"8px"}}>{learningObjectives}</Text>
             <Text fontSize='16px'  color="#5A6D72"  style={{textAlign:"left", marginBottom:"32px"}}>{description}</Text>
@@ -235,7 +249,30 @@ const SyllabusLessons = ( {header, learningObjectives, description,headerColor})
 
 
 
+</SyllabusContextMarginTopWrapper>
+
+      </Box>
+
+
+
+      <Box w="50%" > 
+      <Progress></Progress>
+      </Box>
+
+</Flex>
+
+
+
+
+
 </SyllabusWrapper>
+
+
+
+
+
+
+
 
 </React.Fragment>
     )
