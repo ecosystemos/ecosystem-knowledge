@@ -54,14 +54,13 @@ const StarRating = React.forwardRef(
     }
 
     return (
-      <Stack isInline justify="center">
+      <Stack isInline justifyContent='flex-start' marginBottom={'20px'}   marginLeft={-1}>
         <input name="rating" type="hidden" value={rating} ref={ref} />
         {buttons}
         <Box >
           <Text fontSize="md">
           {rating} (18 reviews)
           </Text>
-          
         </Box>
       </Stack>
     );
