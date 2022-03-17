@@ -65,7 +65,7 @@ export class LandingPage extends Component {
                 />
             </GridItem>
         </Grid>
-        <div background-image={<Image width='100%' src={Picture} zIndex='999'></Image>} position='relative' bg='#F7FBFD'>
+        <div  position='relative' bg='#F7FBFD'>
         <Grid position='sticky' justifyContent='center'>
           <GridItem marginTop='-30%'>
             <Card  product={'Building your Startup Ecosystem'} summary={<StarRating  icon="clarity:star-line"/>} longLine={'Learn how to build a thriving startup ecosystem. Understand how all the moving parts are related and develop skills to be able to connect...'}/>
@@ -76,10 +76,6 @@ export class LandingPage extends Component {
         </Grid>
         </div>
       </Container>
-      {/* <div background-image={this.url({Picture})}>
-asd
-      </div> */}
-      <div background-image={Picture} position='relative' bg='#F7FBFD'>
         <Box>
             <ReviewCardSlider
               description= {'This course provides a great overview of Blender, an extermely powerful (and also incredibly complicated) 3D modeling and animation program. Mikey, the main instructor, is amusing and informative. Both he and Ben student work'}
@@ -90,19 +86,25 @@ asd
               showArrows={true}
             /> 
         </Box>
-      </div>
+        <Box position='relative' top='350px' left='400px'>
+            <Text color='#777D9C' fontSize={24}>Newsletter</Text>
+            <Text>Keep up to date on the latest developments in the startup ecosystem landscape.</Text>
+            <Button color='#FFFFFF' bgColor='#3D4D51'>
+               Sign me up for your weekly newsleter
+            </Button>
+          </Box>
         <Box >
           {/*  */}
           {/* <Image width='100vw' src={Vector1}></Image> 
           <Image width='100vw' marginTop='-400px' src={Vector2}></Image>  
           <Image width='100vw' marginTop='-400px' src={Vector3}></Image>
           <Image width='100vw' src={Vector4}></Image> */}
-          <Image src={Ellipse7} background='#F7FBFD' ></Image>
+          <Image src={Ellipse7} marginLeft='300px' background='#F7FBFD' ></Image>
         </Box>
+        
+       
       </>
     );
   }
 }
-
-
 export default LandingPage;
