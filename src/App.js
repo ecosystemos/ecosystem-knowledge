@@ -4,39 +4,23 @@ import { BrowserRouter as Router, Route , Routes} from 'react-router-dom';
 import LandingPage from './components/LandingPage'
 import Navbar from '../src/components/Navbar'
 import Footer from './components/Footer';
-
-
 function App() {
   return (
-  
-      <div className="App">
-          <Router>
-      <Routes>
-                       
-                        
-                          <Route path='/syllabus' element={<SyllabusPage/>} >  </Route>
-                      
-                    
-
-
-                          </Routes>
-      <Routes>
-
-             <Route path='/' element={<LandingPage/>} ></Route>
-
-      </Routes>
-
-
+    <><div className="App" style={{ backgroundColor: '#F7FBFD' }}>
+      <Router>
+        <Routes>
+          <Route path='/syllabus' element={<SyllabusPage />}>  </Route>
+        </Routes>
+        <Routes>
+          <Route path='/' element={<LandingPage />}></Route>
+        </Routes>
       </Router>
-      </div>
-
-
-
-
+    </div><Footer
+        color={"#004766"}
+        buttonText={"Sign me up!"}
+        buttonColor={"#0E5E81"}
+        buttonWidth={"135px"}
+        buttonHeight={"40px"} /></> 
   );
 }
-
-
-
 export default App;
- 
