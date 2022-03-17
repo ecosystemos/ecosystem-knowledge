@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Text, Button, Box, Link, Spacer,HStack, Container } from '@chakra-ui/react';
+import { Text, Button, Box, Link,HStack, Container } from '@chakra-ui/react';
 import { Image } from '@chakra-ui/image';
+import { Link as LinkRouter } from 'react-router-dom';
 import Rectangle34 from '../stories/assets/Rectangle34.png';
 import Rectangle35 from '../stories/assets/Rectangle35.png'
 import { Grid, GridItem } from '@chakra-ui/react';
@@ -36,6 +37,7 @@ export class LandingPage extends Component {
           </Container>
         </HStack>
       <Container maxW='container.xl'>
+      <Button style={{marginTop:"10px"}}> <LinkRouter to="/syllabus">Visit to Syllabus Page</LinkRouter></Button> 
         <Grid w='100%' height='100vh'>
             <GridItem w='50%'>
               <Text fontSize='5xl' fontFamily='body' w='400' display='flex' marginTop='134px' justifyContent='space-around'>
