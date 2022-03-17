@@ -3,7 +3,7 @@ import { Box, Grid, Text, Center } from "@chakra-ui/react"
 import { Image } from "@chakra-ui/react"
 //import { useQuery, gql } from "@apollo/client";
 import styled from "styled-components";
-
+import Picture from './../stories/assets/Picture.png';
 import UserImg from '../stories/assets/user.jpg';
 //import { boxShadow } from 'styled-system';
 
@@ -149,7 +149,9 @@ export const ReviewCard = ({ description, fname, title, lname, avatarSrc,...prop
     return (<h1 error />);
   } */
   return (
-    <Grid display='flex' justifyContent='center' bg='#F7FBFD'>
+    <Grid style={{ backgroundImage: `url(${Picture})`, w:'20px'}} 
+    justifyContent='center' 
+    bg='#F7FBFD'>
       <Box  style={TextBoxStyle}>
               <Center >
                 <Image src={UserImg} style={ImageStyle}></Image>
