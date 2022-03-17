@@ -31,8 +31,8 @@ export class LandingPage extends Component {
             <Button fontFamily='body'  _hover={{ bgColor: '#FFFFFF' }} color="black" bg='#FFFFFF' border='none' >Connect</Button>
             <Button fontFamily='body'  _hover={{ bgColor: '#FFFFFF' }} color="black" bg='#FFFFFF' border='none' >Scale</Button>
             <Button fontFamily='body'  _hover={{ bgColor: '#FFFFFF' }} color="black" bg='#FFFFFF' border='none'>Contact</Button>
-            <Button fontFamily='body'  _hover={{ bgColor: '#FFFFFF' }} color="black" bg='#FFFFFF' border='none'  >Log In</Button>
-            <Button fontFamily='body'  _hover={{ bgColor: '#3D4D51' }} color="white" bg='#3D4D51' border='none'  >Sign Up Free</Button>
+            <Button fontFamily='body'  _hover={{ bgColor: '#FFFFFF' }} color="black" bg='#FFFFFF' border='none' left='700px' >Log In</Button>
+            <Button fontFamily='body'  _hover={{ bgColor: '#3D4D51' }} color="white" bg='#3D4D51' border='none' left='700px' >Sign Up Free</Button>
           </Container>
         </HStack>
       <Container maxW='container.xl'>
@@ -97,14 +97,6 @@ asd
           <Image width='100vw' src={Vector4}></Image> */}
           <Image src={Ellipse7} background='#F7FBFD' ></Image>
         </Box>
-
-        <Footer 
-            color={"#004766"}
-            buttonText={"Sign me up!"}
-            buttonColor={"#0E5E81"}
-            buttonWidth={"135px"}
-            buttonHeight={"40px"}          
-          /> 
       </>
     );
   }
