@@ -149,10 +149,11 @@ export const ReviewCard = ({ description, fname, title, lname, avatarSrc,...prop
     return (<h1 error />);
   } */
   return (
+    
     <Grid style={{ backgroundImage: `url(${Picture})`, w:'20px'}} 
     justifyContent='center' 
     bg='#F7FBFD'>
-      <Box  style={TextBoxStyle}>
+      <Box style={TextBoxStyle} >
               <Center >
                 <Image src={UserImg} style={ImageStyle}></Image>
               </Center>

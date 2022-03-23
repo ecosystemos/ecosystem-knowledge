@@ -54,7 +54,7 @@ const StarRating = React.forwardRef(
     }
 
     return (
-      <Stack isInline justifyContent='flex-start' marginBottom={'20px'}   marginLeft={-1}>
+      <Stack isInline justifyContent='flex-start' marginBottom={'20px'}   marginLeft={-1}  paddingLeft='20px'>
         <input name="rating" type="hidden" value={rating} ref={ref} />
         {buttons}
         <Box >

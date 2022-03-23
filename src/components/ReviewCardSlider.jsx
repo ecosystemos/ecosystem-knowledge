@@ -28,8 +28,9 @@
  
  export const ReviewCardSlider = ({ intervalMS,showArrows, description, fname, title, lname, avatarSrc,...props}) =>{
      return(
-         <CaroStyle>
+         <CaroStyle >
          <Carousel
+      
        showArrows={showArrows}
        infiniteLoop={true}
        showThumbs={false}
