@@ -16,6 +16,8 @@
      box-shadow: 0px 4px 8px rgba(76, 166, 205, 0.2);
      width:16px;
      height:16px;
+     margin: 400px 6px;
+
  }
  
  .carousel .control-dots .dot.selected,.carousel .control-dots .dot:hover
