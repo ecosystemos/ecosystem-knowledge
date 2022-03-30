@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
 import { Box, Grid, Text, Center } from "@chakra-ui/react"
 import { Image } from "@chakra-ui/react"
@@ -139,6 +140,9 @@ const TitleStyle = {
 
 };
 
+const BackgroundImage ={
+  
+}
 
 export const ReviewCard = ({ description, fname, title, lname, avatarSrc,...props}) => {
 /*   const { data, loading, error } = useQuery(ReviewCards);
@@ -150,22 +154,25 @@ export const ReviewCard = ({ description, fname, title, lname, avatarSrc,...prop
   } */
   return (
     
-    <Grid style={{ backgroundImage: `url(${Picture})`, w:'20px'}} 
+    <Grid 
     justifyContent='center' 
+    height="950px"
+    style={{ backgroundImage: `url(${Picture})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}
     bg='#F7FBFD'>
-      <Box style={TextBoxStyle} >
-              <Center >
-                <Image src={UserImg} style={ImageStyle}></Image>
-              </Center>
-              <BlockQuotes>
-                <Text style={DescriptionStyle}>{description}</Text>
-              </BlockQuotes>
-              <Box style={FooterTextBox}>
-                <Text style={NameStyle}>{fname} {lname}</Text>
-                <Text style={TitleStyle}>{title}</Text>
-              </Box>
-            </Box>
-    </Grid>
+        <Box style={TextBoxStyle} >
+          <Center >
+            <Image src={UserImg} style={ImageStyle}></Image>
+          </Center>
+          <BlockQuotes>
+            <Text style={DescriptionStyle}>{description}</Text>
+          </BlockQuotes>
+          <Box style={FooterTextBox}>
+            <Text style={NameStyle}>{fname} {lname}</Text>
+            <Text style={TitleStyle}>{title}</Text>
+          </Box>
+        </Box>
+      </Grid>
+  
       
   )
 };
