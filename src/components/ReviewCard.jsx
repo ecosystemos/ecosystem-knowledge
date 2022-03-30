@@ -1,9 +1,10 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
 import { Box, Grid, Text, Center } from "@chakra-ui/react"
 import { Image } from "@chakra-ui/react"
 //import { useQuery, gql } from "@apollo/client";
 import styled from "styled-components";
-
+import Picture from './../stories/assets/Picture.png';
 import UserImg from '../stories/assets/user.jpg';
 //import { boxShadow } from 'styled-system';
 
@@ -139,6 +140,9 @@ const TitleStyle = {
 
 };
 
+const BackgroundImage ={
+  
+}
 
 export const ReviewCard = ({ description, fname, title, lname, avatarSrc,...props}) => {
 /*   const { data, loading, error } = useQuery(ReviewCards);
@@ -149,20 +153,26 @@ export const ReviewCard = ({ description, fname, title, lname, avatarSrc,...prop
     return (<h1 error />);
   } */
   return (
-    <Grid display='flex' justifyContent='center' bg='#F7FBFD'>
-      <Box  style={TextBoxStyle}>
-              <Center >
-                <Image src={UserImg} style={ImageStyle}></Image>
-              </Center>
-              <BlockQuotes>
-                <Text style={DescriptionStyle}>{description}</Text>
-              </BlockQuotes>
-              <Box style={FooterTextBox}>
-                <Text style={NameStyle}>{fname} {lname}</Text>
-                <Text style={TitleStyle}>{title}</Text>
-              </Box>
-            </Box>
-    </Grid>
+    
+    <Grid 
+    justifyContent='center' 
+    height="950px"
+    style={{ backgroundImage: `url(${Picture})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}
+    bg='#F7FBFD'>
+        <Box style={TextBoxStyle} >
+          <Center >
+            <Image src={UserImg} style={ImageStyle}></Image>
+          </Center>
+          <BlockQuotes>
+            <Text style={DescriptionStyle}>{description}</Text>
+          </BlockQuotes>
+          <Box style={FooterTextBox}>
+            <Text style={NameStyle}>{fname} {lname}</Text>
+            <Text style={TitleStyle}>{title}</Text>
+          </Box>
+        </Box>
+      </Grid>
+  
       
   )
 };
