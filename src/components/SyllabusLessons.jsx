@@ -88,7 +88,7 @@ const SyllabusLessons = ( {header, learningObjectives, description,headerColor})
 
       <Box w="100%" >
       <SyllabusContextMarginTopWrapper>
-            <Text fontSize='32px'  color={headerColor}  style={{textAlign:"left", marginBottom:"16px"}}>{header}</Text>
+            <Text fontSize='32px'  color={"#82C6E3"}  style={{textAlign:"left", marginBottom:"16px"}}>{header}</Text>
             <Text fontSize='20px'  color="#222C2F"  style={{textAlign:"left", marginBottom:"8px"}}>{learningObjectives}</Text>
             <Text fontSize='16px'  color="#5A6D72"  style={{textAlign:"left", marginBottom:"32px"}}>{description}</Text>
 
