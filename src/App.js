@@ -2,7 +2,6 @@ import React from 'react';
 import SyllabusPage from './components/SyllabusPage';
 import { BrowserRouter as Router, Route , Routes} from 'react-router-dom';
 import LandingPage from './components/LandingPage'
-import Navbar from '../src/components/Navbar'
 import Footer from './components/Footer';
 import TakeNotesPage from './components/TakeNotesPage';
 function App() {
