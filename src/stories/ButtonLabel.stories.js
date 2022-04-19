@@ -23,6 +23,7 @@ export default {
     buttonColor: "#0E5E81",
     buttonWidth: "135px",
     buttonHeight: "20%",
+    textFontSize: "medium"
 
 
   };

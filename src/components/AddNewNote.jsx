@@ -11,14 +11,14 @@ padding: 16px;
 background: #FFFFFF;
 box-shadow: 0px 10px 20px -2px rgba(34, 44, 47, 0.08);
 
-;
-
-
 
 `;
 
+
+
 const AddNewNote = () => {
   return (
+   
     <AddNewNoteWrapper>
      
       <Box >   
