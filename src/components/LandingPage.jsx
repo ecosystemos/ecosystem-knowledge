@@ -53,6 +53,7 @@ export class LandingPage extends Component {
           </GridItem>
         </Grid>
         <Button style={{marginTop:"10px"}}> <LinkRouter to="/syllabus">Visit to Syllabus Page</LinkRouter></Button>
+        <Button style={{marginTop:"10px" , marginLeft:"5px"}}> <LinkRouter to="/notes">Visit to Notes Page</LinkRouter></Button>
           <Box>
             <Grid bg='#F7FBFD' height='100vh'>
               <Flex flexDirection="row">

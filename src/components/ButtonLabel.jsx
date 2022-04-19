@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 
 
-export const ButtonLabel = ({buttonText,buttonWidth,buttonHeight,buttonColor,...args}) => {
+export const ButtonLabel = ({buttonText,buttonWidth,buttonHeight,buttonColor,textFontSize,...args}) => {
 
     const ButtonWrapper = styled.section`
 
@@ -15,9 +15,10 @@ padding: 12px 24px;
 display: flex;
 flex-direction: row;
 text-align:center;
+font-size:${textFontSize};
 
 
-position: static;
+
 width: ${buttonWidth};
 height: ${buttonHeight};
 left: 0px;
@@ -58,6 +59,7 @@ ButtonLabel.propTypes = {
     buttonText: PropTypes.string.isRequired,
     buttonWidth: PropTypes.string.isRequired,
     buttonWheight: PropTypes.string.isRequired,
+    textFontSize: PropTypes.string.isRequired,
     
     
     
