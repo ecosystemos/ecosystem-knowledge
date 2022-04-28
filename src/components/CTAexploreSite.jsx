@@ -3,6 +3,7 @@ import { Box, Flex  } from '@chakra-ui/react'
 import CTAexploreCard from './CTAexploreCard'
 import styled from 'styled-components';
 
+
 const CTAexploreCardWrapper = styled.section `
 
 display: flex ;
@@ -89,8 +90,31 @@ const CTAexploreSite = () => {
       
       <CTAexploreCardWrapper> 
             <HeaderWrapper> <Box>Learn, grow, share, connect </Box> </HeaderWrapper>
+            
             <BodyWrapper><Box> A trove of resources are at your disposal. Dive in and choose the tools that work for you</Box>  </BodyWrapper>
-            <CTAexploreCard> </CTAexploreCard>
+            <Flex flexDirection={'row'}> 
+            <CTAexploreCard
+            icon={"fa:comments-o"}
+            iconColor={"#4ca6cd"}
+            header={"Do your research"}
+            body={"Put what you’ve learned into action now. Go to knowledge center to get started building your ecosystem today.  Use our suggestions or create your own personalized list. "}> 
+            </CTAexploreCard>
+
+            <CTAexploreCard
+            icon={"fa6-solid:book-open-reader"}
+            iconColor={"#ffff"}
+            header={"Get Certified"}
+            body={"Put what you’ve learned into action now. Go to knowledge center to get started building your ecosystem today.  Use our suggestions or create your own personalized list. "}> 
+            </CTAexploreCard>
+
+            <CTAexploreCard
+            icon={"wpf:diploma-1"}
+            iconColor={"#4CA6CD"}
+            header={"Join our Forum"}
+            body={"Put what you’ve learned into action now. Go to knowledge center to get started building your ecosystem today.  Use our suggestions or create your own personalized list. "}> 
+            </CTAexploreCard>
+            
+            </Flex>
         
             </CTAexploreCardWrapper>
    

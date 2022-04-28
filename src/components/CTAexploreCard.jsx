@@ -2,6 +2,10 @@ import { Box ,Flex,Link} from '@chakra-ui/react'
 import React from 'react'
 import styled from "styled-components"
 import { Icon } from '@iconify/react';
+import PropTypes from 'prop-types';
+
+
+
 
 
 
@@ -103,32 +107,42 @@ flex-grow: 0;
 margin: 8px 0px;
 `;
 
-const CTAexploreCard = () => {
+const Circle = styled.section `
+
+height:100px;
+width:100px;
+background: #004766;
+border-radius:50%;
+padding: 9% 9%;
+margin: 60px 0px 32px 0px;
+
+`;
+const CTAexploreCard = ({icon,iconColor,header,body,...args}) => {
   return (
       <React.Fragment> 
-      <Flex flexDirection={'row'}> 
-        <Box> 
-            <Box></Box>
-            <HeaderWrapper> <Box>Do your research</Box>  </HeaderWrapper>
-            <BodyWrapper> <Box>Put what you’ve learned into action now. Go to knowledge center to get started building your ecosystem today.  Use our suggestions or create your own personalized list. </Box> </BodyWrapper>
+      
+        <Box  marginRight={"182px"}> 
+            <Circle> <Box><Icon icon={icon} color={iconColor} width="50" height="50" /></Box> </Circle>
+            <HeaderWrapper> <Box>{header}</Box>  </HeaderWrapper>
+            <BodyWrapper> <Box>{body}</Box> </BodyWrapper>
             <LinkWrapper><Icon icon="dashicons:arrow-right-alt2" width="15" height="15" /><Link style={{marginLeft:"4px"}}>Learn more</Link></LinkWrapper>            
         </Box>   
-        <Box> 
-            <Box></Box>
-            <HeaderWrapper> <Box>Do your research</Box>  </HeaderWrapper>
-            <BodyWrapper> <Box>Put what you’ve learned into action now. Go to knowledge center to get started building your ecosystem today.  Use our suggestions or create your own personalized list. </Box> </BodyWrapper>
-            <LinkWrapper><Icon icon="dashicons:arrow-right-alt2" width="15" height="15" /><Link style={{marginLeft:"4px"}}>Learn more</Link></LinkWrapper>            
-        </Box>   
-        <Box> 
-            <Box></Box>
-            <HeaderWrapper> <Box>Do your research</Box>  </HeaderWrapper>
-            <BodyWrapper> <Box>Put what you’ve learned into action now. Go to knowledge center to get started building your ecosystem today.  Use our suggestions or create your own personalized list. </Box> </BodyWrapper>
-            <LinkWrapper><Icon icon="dashicons:arrow-right-alt2" width="15" height="15" /><Link style={{marginLeft:"4px"}}>Learn more</Link></LinkWrapper>            
-        </Box>   
-    </Flex>
+  
+
             
         </React.Fragment>
   )
 }
 
 export default CTAexploreCard
+
+CTAexploreCard.propTypes = {
+    buttonColor: PropTypes.string.isRequired,
+    buttonText: PropTypes.string.isRequired,
+    buttonWidth: PropTypes.string.isRequired,
+    buttonWheight: PropTypes.string.isRequired,
+    textFontSize: PropTypes.string.isRequired,
+    
+
+    
+};

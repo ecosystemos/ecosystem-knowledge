@@ -47,6 +47,8 @@ function TakeNotesPage() {
     <Note></Note>
     </TakeNotesItemsWrapper>
     <MappingComponent> </MappingComponent>
+    
+    <CTAexploreSite> </CTAexploreSite>
 
     <Newsletter 
           header={"Sign up for Startup Commons newsletter"}
@@ -56,7 +58,6 @@ function TakeNotesPage() {
           placeholderText={'Enter Your Email'}   
         ></Newsletter>
 
-        <CTAexploreSite> </CTAexploreSite>
 
     </React.Fragment>
   )
