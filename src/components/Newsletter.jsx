@@ -9,10 +9,8 @@ import PropTypes from 'prop-types';
 
 const NewsletterWrapper = styled.section`
 align-items: center;
-margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 5%;
-  margin-bottom: 5%;;
+padding: 5% 5% 5% 5%;
+  background:#F7FBFD;
 
 `;
 const HeadWrapper    = styled.section`

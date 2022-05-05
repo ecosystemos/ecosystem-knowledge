@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route , Routes} from 'react-router-dom';
 import LandingPage from './components/LandingPage'
 import Footer from './components/Footer';
 import TakeNotesPage from './components/TakeNotesPage';
+import 'typeface-roboto'
+
 function App() {
   return (
     <><div className="App" style={{ backgroundColor: '#F7FBFD' }}>
