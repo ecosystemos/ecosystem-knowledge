@@ -8,6 +8,7 @@ import styled from "styled-components"
 import Newsletter from './Newsletter'
 import TakeNotesHeader from './TakeNotesHeader'
 import MappingComponent from './MappingComponent'
+import CTAexploreSite from './CTAexploreSite'
 
 const TakeNotesItemsWrapper = styled.section `
 display:flex;
@@ -46,6 +47,8 @@ function TakeNotesPage() {
     <Note></Note>
     </TakeNotesItemsWrapper>
     <MappingComponent> </MappingComponent>
+    
+    <CTAexploreSite> </CTAexploreSite>
 
     <Newsletter 
           header={"Sign up for Startup Commons newsletter"}
@@ -54,6 +57,7 @@ function TakeNotesPage() {
           buttonAndFormColor={"#004766;"}
           placeholderText={'Enter Your Email'}   
         ></Newsletter>
+
 
     </React.Fragment>
   )

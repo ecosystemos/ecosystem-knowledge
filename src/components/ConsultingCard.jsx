@@ -3,6 +3,7 @@ import { Box, Flex,Link,Text } from "@chakra-ui/react";
 import styled from 'styled-components';
 import { Icon } from '@iconify/react';
 
+
 const Wrapper = styled.section`
 
 padding: 64px 160px 64px 64px;
